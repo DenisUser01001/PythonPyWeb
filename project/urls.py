@@ -26,6 +26,7 @@ urlpatterns = [
     path('api_alter/', include('apps.db_train_alternative.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/', include('apps.api.urls')),
+    path('', include('auto_api.urls')),
 ]
 
 if settings.DEBUG:
