@@ -33,7 +33,10 @@ ALLOWED_HOSTS = [host.strip() for host in os.getenv('ALLOWED_HOSTS').split(',')]
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.DenisMEO.pythonanywhere.com',
+    'DenisMEO.pythonanywhere.com',
+]
 
 
 # Application definition
